@@ -9,7 +9,7 @@ export const Header = () => {
           Мы на WB
         </a>
         <nav className={styles.navigation}>
-          <Link to="/" className={styles.link}>
+          <Link to="" className={styles.link}>
             О нас
           </Link>
           <Link to="/" className={styles.link}>
@@ -59,6 +59,7 @@ export const Header = () => {
               type="text"
               placeholder="Поиск по сайту"
               className={styles.search_input}
+              name="search"
             />
             <img
               src="/Loupe.svg"
@@ -66,7 +67,7 @@ export const Header = () => {
               className={styles.search_img}
             />
           </div>
-          <Link to="/">
+          <Link to="/log_in">
             <img src="/User Icon.svg" alt="" className={styles.user_img} />
           </Link>
           <Link to="/">
