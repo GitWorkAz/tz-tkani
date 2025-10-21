@@ -29,7 +29,7 @@ export const LogIn = () => {
         <div className={styles.form_password}>
           <div className={styles.form_password_link}>
             <p>Пароль</p>
-            <Link to="/forgot">Забыли пароль?</Link>
+            <Link to="/forgot" className={styles.form_link_forgot}>Забыли пароль?</Link>
           </div>
           <input
             type="password"
