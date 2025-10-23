@@ -4,7 +4,15 @@ import { useState } from "react";
 import { Modal } from "./modal/Modal";
 
 export const Header = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const catalogClick = () => {
+    setIsModalOpen(true);
+  };
+  
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -33,16 +41,18 @@ export const Header = () => {
           Мы на OZON
         </a>
       </section>
+
       <section className={styles.bottom_bar}>
+
         <div className={styles.transitions}>
           <button
             className={styles.catalog}
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            onClick={catalogClick}
           >
             Каталог
           </button>
-          {isDropdownOpen && (
-            <div className={styles.dropdown}>
+          {isModalOpen && (
+            <div className={styles.modal_overlay} onClick={closeModal}>
               <Modal />
             </div>
           )}
