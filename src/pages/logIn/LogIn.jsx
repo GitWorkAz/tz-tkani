@@ -2,14 +2,18 @@ import { Link } from "react-router-dom";
 import styles from "./LogIn.module.css";
 
 export const LogIn = () => {
-    const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   return (
     <div className={styles.wrapper}>
       <Link to="/" className={styles.logo}>
-        <img src="/Another Logo Icon.svg" alt="Логотип" className={styles.logo_img} />
+        <img
+          src="/Another Logo Icon.svg"
+          alt="Логотип"
+          className={styles.logo_img}
+        />
         <img
           src="/CENTER TKANI.svg"
           alt="Название"
@@ -33,7 +37,9 @@ export const LogIn = () => {
         <div className={styles.form_general}>
           <div className={styles.form_password_link}>
             <p>Пароль</p>
-            <Link to="/forgot" className={styles.form_link_forgot}>Забыли пароль?</Link>
+            <Link to="/forgot" className={styles.form_link_forgot}>
+              Забыли пароль?
+            </Link>
           </div>
           <input
             type="password"
@@ -44,7 +50,9 @@ export const LogIn = () => {
             className={styles.form_input}
           />
         </div>
-        <button type="submit" className={styles.form_btn}>Войти</button>
+        <button type="submit" className={styles.form_btn}>
+          Войти
+        </button>
         <div className={styles.form_link}>
           <p>Нет аккаунта?</p>
           <Link to="/sing_up" className={styles.form_link_singUp}>
@@ -52,7 +60,6 @@ export const LogIn = () => {
           </Link>
         </div>
       </form>
-
     </div>
   );
 };
