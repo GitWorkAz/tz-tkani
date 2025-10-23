@@ -2,10 +2,14 @@ import styles from "./SingUp.module.css";
 import { Link } from "react-router-dom";
 
 export const SingUp = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={styles.wrapper}>
       <Link to="/" className={styles.logo}>
-        <img src="/Logo Icon.svg" alt="Логотип" className={styles.logo_img} />
+        <img src="/Another Logo Icon.svg" alt="Логотип" className={styles.logo_img} />
         <img
           src="/CENTER TKANI.svg"
           alt="Название"
@@ -13,10 +17,10 @@ export const SingUp = () => {
         />
       </Link>
 
-      <div className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <h3>Регистрация</h3>
         <div className={styles.form_user}>
-          <div className={styles.form_name}>
+          <div className={styles.form_general}>
             <p>Имя</p>
             <input
               type="text"
@@ -26,7 +30,7 @@ export const SingUp = () => {
               className={styles.form_input}
             />
           </div>
-          <div className={styles.form_surname}>
+          <div className={styles.form_general}>
             <p>Фамилия</p>
             <input
               type="text"
@@ -37,7 +41,7 @@ export const SingUp = () => {
             />
           </div>
         </div>
-        <div className={styles.form_email}>
+        <div className={styles.form_general}>
           <p>Электронная почта</p>
           <input
             type="email"
@@ -48,7 +52,7 @@ export const SingUp = () => {
             className={styles.form_input}
           />
         </div>
-        <div className={styles.form_phone}>
+        <div className={styles.form_general}>
           <p>Телефон</p>
           <input
             type="tel"
@@ -59,7 +63,7 @@ export const SingUp = () => {
             className={styles.form_input}
           />
         </div>
-        <div className={styles.form_password}>
+        <div className={styles.form_general}>
           <p>Пароль</p>
           <input
             type="password"
@@ -73,7 +77,7 @@ export const SingUp = () => {
         <button type="submit" className={styles.form_btn}>
           Создать аккаунт
         </button>
-        <p>
+        <p className={styles.form_agreement}>
           Нажимая «Создать аккаунт» выше, вы подтверждаете, что будете получать
           обновления от команды Center Tkani и что вы прочитали, поняли и
           согласны с Условиями и положениями, Лицензионным соглашением и
@@ -81,11 +85,14 @@ export const SingUp = () => {
         </p>
         <div className={styles.form_link}>
           <p>У вас уже есть аккаунт?</p>
-          <Link to="/log_in" className={styles.form_link_singUp}>
-            Войти
-          </Link>
+          <button className={styles.form_link_btn}>
+            <Link to="/log_in" className={styles.form_link_logIn}>
+              Войти
+            </Link>
+          </button>
         </div>
-      </div>
+      </form>
+
     </div>
   );
 };

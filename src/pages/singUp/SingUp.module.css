@@ -11,10 +11,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 10vw;
-}
-.logo_img {
-    width: 34px;
+    margin-bottom: 44.5px;
 }
 .logo_text {
     width: 95px;
@@ -23,19 +20,21 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 450px;
+    gap: 16px;
+    width: 472px;
     background: #fff;
-    padding: 30px;
+    padding: 32px;
     color: #888;
     border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .form h3 {
-    font-size: 38px;
+    font-size: 32px;
     color: #000;
 }
 .form_input {
-    width: 400px;
+    width: 100%;
     border-radius: 10px;
     height: 36px;
     padding: 10px;
@@ -43,22 +42,55 @@
     border: none;
     outline: none;
 }
+.form_input:hover {
+    background: #E4E2DF;
+}
 .form_user {
     display: flex;
     justify-content: space-between;
 }
-.form_email {
+.form_general {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
+.form_btn {
+    font-size: 16px;
+    border-radius: 8px;
+    background: #9B1E1C;
+    padding: 10.5px 0;
+    color: #fff;
+    border: none;
+    margin-top: 14px;
+}
+.form_agreement {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 0;
+}
 
-
-
-
-
-
+.form_link {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    align-items: center;
+    border-top: 1px solid #88888848;
+    padding-top: 24px;
+}
+.form_link_btn {
+    text-decoration: none;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 11px 17px;
+    color: #000;
+    background: #fff;
+}
+.form_link_logIn {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
 
 
 

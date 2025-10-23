@@ -11,10 +11,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 10vw;
-}
-.logo_img {
-    width: 34px;
+    margin-bottom: 165px;
 }
 .logo_text {
     width: 95px;
@@ -23,25 +20,27 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 450px;
+    gap: 16px;
+    width: 472px;
     background: #fff;
-    padding: 30px;
+    padding: 32px;
     color: #888;
     border-radius: 10px;
     font-size: 14px;
+    font-weight: 500;
 }
 .form h3 {
-    font-size: 38px;
+    font-size: 32px;
     color: #000;
+    margin-bottom: 8px;
 }
-.form_email {
+.form_general {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 .form_input {
-    width: 400px;
+    width: 100%;
     border-radius: 10px;
     height: 36px;
     padding: 10px;
@@ -51,11 +50,6 @@
 }
 .form_input:hover {
     background: #E4E2DF;
-}
-.form_password {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 .form_password_link {
     display: flex;
@@ -68,13 +62,18 @@
 }
 .form_link_forgot:hover {
     color: #000;
+    border-bottom: 1px solid #000;
+
 }
 .form_btn {
-    border-radius: 10px;
+    font-size: 16px;
+    border-radius: 8px;
     background: #9B1E1C;
-    padding: 10px 0;
+    padding: 10.5px 0;
     color: #fff;
     border: none;
+    margin-top: 14px;
+    margin-bottom: 8px;
 }
 .form_link {
     display: flex;

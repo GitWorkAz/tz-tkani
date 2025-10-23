@@ -32,12 +32,6 @@ export const Header = () => {
       <section className={styles.bottom_bar}>
         <div className={styles.transitions}>
           <button className={styles.catalog}>Каталог</button>
-          <select id="select1" className={styles.catalog} name="Catalog">
-            <option value="">
-              Каталог2
-            </option>
-            <option value=""></option>
-          </select>
           <Link to="/" className={`${styles.our_work} ${styles.link}`}>
             Работы из наших тканей
           </Link>

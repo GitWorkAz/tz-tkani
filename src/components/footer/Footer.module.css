@@ -1,0 +1,48 @@
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 64px 0;
+}
+.top_section_title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.top_section_btn {
+    padding: 10.5px 11.5px;
+    background: #9B1E1C;
+    border: none;
+    border-radius: 8px;
+}
+.top_section_btn_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom_section {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
