@@ -1,1 +1,98 @@
+.wrapper {
+    position: absolute;
+    top: 40px;
+    height: 450px;
+    width: 610px;
+    border-radius: 8px;
+    /* z-index: 10; */
+    background: white;
+}
+
+.modal_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.modal_left, .modal_right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+    gap: 7px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #F1F0EE;
+    width: 100%;
+    height: 100%;
+
+}
+.modal_title {
+    color: #101010;
+}
+.modal_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal_link_name {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 20px;
+    color: #4d4d4d;
+    cursor: pointer;
+    gap: 10px;
+}
+.modal_link_name::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url('/arrow down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.modal_link_name.opened::after {
+    background-image: url('/arrow up.svg');
+}
+.modal_link_item, .link {
+    text-decoration: none;
+}
+.modal_link_item:hover,.link:hover {
+    text-decoration: underline;
+}
+.modal_link_item {
+    color: #4d4d4d;
+}
+.link {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 18px;
+}
+.openedBackground {
+  background-color: #e4e2df;
+}
+
+
+
+
+
+
+
+
+
 

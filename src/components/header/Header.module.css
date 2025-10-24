@@ -34,6 +34,9 @@
     gap: 30px;
     align-items: center;
 }
+.position_btn {
+    position: relative;
+}
 .catalog {
     border: none;
     color: #fff;
@@ -41,6 +44,18 @@
     outline: none;
     padding: 8px 12px;
     background: #9B1E1C;
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.modal_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
 }
 .our_work, .sale {
     color: #000;

@@ -4,7 +4,7 @@ import { Footer } from "./footer/Footer";
 
 export const Layout = () => {
   const location = useLocation()
-  const hideHeader = ['/sing_up', '/log_in']
+  const hideHeader = ['/sing_up', '/log_in', '/forgot']
   const shouldRoutes = hideHeader.includes(location.pathname)
 
   return (

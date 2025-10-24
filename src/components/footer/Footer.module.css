@@ -1,0 +1,72 @@
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #1010102b;
+    padding: 64px 0;
+}
+.top_section_title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.top_section_btn {
+    padding: 10.5px 11.5px;
+    background: #9B1E1C;
+    border: none;
+    border-radius: 8px;
+}
+.top_section_btn_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.bottom_section {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom_section_clothes,.bottom_section_home,.bottom_section_сompany {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 300px;
+}
+.bottom_section_home {
+    margin-right: 316px;
+}
+ul {
+    list-style: none;
+}
+.title {
+    font-size: 17px;
+    font-weight: 500;
+    color: #101010;
+}
+.link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

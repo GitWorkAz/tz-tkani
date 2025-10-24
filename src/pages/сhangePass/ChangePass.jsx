@@ -1,7 +1,7 @@
-import styles from "./Forgot.module.css";
+import styles from "./ChangePass.module.css";
 import { Link } from "react-router-dom";
 
-export const Forgot =()=> {
+export const ChangePass = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -22,32 +22,36 @@ export const Forgot =()=> {
       </Link>
 
       <form className={styles.form} onSubmit={handleSubmit}>
-        <h3>Забыли свой пароль?</h3>
+        <h3>Измените свой пароль</h3>
         <p className={styles.form_description}>
-          Введите свой адрес электронной почты ниже, и мы отправим вам код для
-          входа в систему и сброса пароля.
+          Выберите новый пароль для своей учётной записи.
         </p>
         <div className={styles.form_general}>
-          <p>Электронная почта</p>
+          <p>Пароль</p>
           <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="user@company.com"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Новый пароль"
+            required
+            className={styles.form_input}
+          />
+        </div>
+        <div className={styles.form_general}>
+          <p>Подтвердите пароль</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Подтвердите новый пароль"
             required
             className={styles.form_input}
           />
         </div>
 
         <button type="submit" className={styles.form_btn}>
-          Отправить код
+          Сменить пароль
         </button>
-        <div className={styles.form_link}>
-          <p>Помните свой пароль?</p>
-          <Link to="/log_in" className={styles.form_link_singUp}>
-            Войти
-          </Link>
-        </div>
       </form>
     </div>
   );

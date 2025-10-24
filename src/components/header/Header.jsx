@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import { useState } from "react";
+import { Modal } from "./modal/Modal";
 
 export const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const catalogClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className={styles.wrapper}>
       <section className={styles.top_bar}>
@@ -29,15 +41,21 @@ export const Header = () => {
           Мы на OZON
         </a>
       </section>
+
       <section className={styles.bottom_bar}>
         <div className={styles.transitions}>
-          <button className={styles.catalog}>Каталог</button>
-          <select id="select1" className={styles.catalog} name="Catalog">
-            <option value="">
-              Каталог2
-            </option>
-            <option value=""></option>
-          </select>
+          <div className={styles.position_btn}>
+            <button className={styles.catalog} onClick={catalogClick}>
+              Каталог
+              <img src="/arrow white.svg" alt="Стрелка" />
+            </button>
+            {isModalOpen && (
+              <div className={styles.modal_overlay} onClick={closeModal}>
+                <Modal />
+              </div>
+            )}
+          </div>
+
           <Link to="/" className={`${styles.our_work} ${styles.link}`}>
             Работы из наших тканей
           </Link>
