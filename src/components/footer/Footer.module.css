@@ -6,9 +6,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     margin-bottom: 48px;
     border-bottom: 1px solid #1010102b;
     padding: 64px 0;
+=======
+    margin: 64px 0;
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 }
 .top_section_title {
     font-size: 38px;
@@ -26,11 +30,15 @@
     color: #fff;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 .bottom_section {
     display: flex;
     justify-content: space-between;
 }
+<<<<<<< HEAD
 .bottom_section_clothes,.bottom_section_home,.bottom_section_сompany {
     display: flex;
     flex-direction: column;
@@ -57,6 +65,13 @@ ul {
 .link:hover {
     text-decoration: underline;
 }
+=======
+ul {
+    list-style: none;
+}
+
+
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 
 
 

@@ -1,14 +1,32 @@
 .wrapper {
+<<<<<<< HEAD
     position: absolute;
     top: 40px;
     height: 450px;
     width: 610px;
     border-radius: 8px;
     /* z-index: 10; */
+=======
+    position: fixed;
+    top: 105px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    max-height: 400px;
+    max-width: 640px;
+    border-radius: 8px;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 10;
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
     background: white;
 }
 
 .modal_content {
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -20,11 +38,23 @@
     font-size: 14px;
     font-weight: 500;
     color: #4d4d4d;
+=======
+    display: flex;
+    /* justify-content: center; */
+    background: #F1F0EE;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    /* max-width: 90%; */
+    /* max-height: 90%; */
+    overflow: auto;
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 }
 
 .modal_left, .modal_right {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     text-align: left;
     flex: 1;
     gap: 7px;
@@ -37,10 +67,14 @@
 }
 .modal_title {
     color: #101010;
+=======
+    gap: 10px;
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 }
 .modal_links {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 10px;
 }
 
@@ -85,6 +119,9 @@
 }
 .openedBackground {
   background-color: #e4e2df;
+=======
+    gap: 8px;
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 }
 
 
@@ -95,4 +132,12 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 

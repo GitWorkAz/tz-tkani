@@ -22,6 +22,7 @@ export const Modal = ({}) => {
             <Link to="/" className={styles.modal_link_item}>
               Шелк
             </Link>
+<<<<<<< HEAD
             <div
               name=""
               className={`${styles.modal_link_name} ${
@@ -103,6 +104,25 @@ export const Modal = ({}) => {
                   </Link>
                 </>
               )}
+=======
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+            </div>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+            </div>
+            <Link to="/">Вискоза</Link>
+            <Link to="/">Тенсель</Link>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Купра</Link>
+              <Link to="/">Хлопок</Link>
+            </div>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
             </div>
             <Link to="/" className={styles.modal_link_item}>
               Джинса
@@ -113,6 +133,7 @@ export const Modal = ({}) => {
         <section className={styles.modal_right}>
           <h3 className={styles.modal_title}>Для одежды</h3>
           <div className={styles.modal_links}>
+<<<<<<< HEAD
             <div
               name=""
               className={`${styles.modal_link_name} ${
@@ -207,6 +228,27 @@ export const Modal = ({}) => {
                   </Link>
                 </>
               )}
+=======
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Однотоп / Страйп</Link>
+              <Link to="/">Принт</Link>
+            </div>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+            </div>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+            </div>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+            </div>
+            <div name="" className={styles.modal_link_name}>
+              <Link to="/">Ткань 1</Link>
+              <Link to="/">Ткань 2</Link>
+>>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
             </div>
             <Link to="/" className={styles.modal_link_item}>
               Вафельное полотно
