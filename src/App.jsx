@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { SingUp } from "./pages/singUp/SingUp";
 import { LogIn } from "./pages/logIn/LogIn";
 import { Forgot } from "./pages/forgot/Forgot";
+import { AboutUs } from "./pages/aboutUs/AboutUs";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="about_us" element={<AboutUs />} />
             <Route path="sing_up" element={<SingUp />} />
             <Route path="log_in" element={<LogIn />} />
             <Route path="forgot" element={<Forgot />} />

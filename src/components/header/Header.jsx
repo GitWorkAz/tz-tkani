@@ -9,11 +9,6 @@ export const Header = () => {
   const catalogClick = () => {
     setIsModalOpen(true);
   };
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -25,7 +20,7 @@ export const Header = () => {
           Мы на WB
         </a>
         <nav className={styles.navigation}>
-          <Link to="" className={styles.link}>
+          <Link to="about_us" className={styles.link}>
             О нас
           </Link>
           <Link to="/" className={styles.link}>
@@ -49,7 +44,6 @@ export const Header = () => {
       <section className={styles.bottom_bar}>
 
         <div className={styles.transitions}>
-<<<<<<< HEAD
           <div className={styles.position_btn}>
             <button className={styles.catalog} onClick={catalogClick}>
               Каталог
@@ -61,19 +55,6 @@ export const Header = () => {
               </div>
             )}
           </div>
-=======
-          <button
-            className={styles.catalog}
-            onClick={catalogClick}
-          >
-            Каталог
-          </button>
-          {isModalOpen && (
-            <div className={styles.modal_overlay} onClick={closeModal}>
-              <Modal />
-            </div>
-          )}
->>>>>>> 2ede56e3ef629ab50000b2cceb50d0b6f1565ba4
 
           <Link to="/" className={`${styles.our_work} ${styles.link}`}>
             Работы из наших тканей
