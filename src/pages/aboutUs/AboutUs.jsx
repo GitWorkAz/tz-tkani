@@ -261,7 +261,7 @@ export const AboutUs = () => {
 
         <div className={styles.contacts_container}>
           <div className={styles.contacts_info}>
-            <div className={styles.info}>
+            <div className={styles.info_container}>
               <div className={styles.info_name}>
                 <img src="/location-01.svg" alt="Иконка" />
                 <p>Наш адрес</p>
@@ -269,7 +269,7 @@ export const AboutUs = () => {
               <p>ул. Кабардинская 158, Нальчик, КБР</p>
             </div>
 
-            <div className={styles.info}>
+            <div className={styles.info_container}>
               <div className={styles.info_name}>
                 <img src="/call-01.svg" alt="Иконка" />
                 <p>Телефон</p>
@@ -277,7 +277,7 @@ export const AboutUs = () => {
               <p>+7 (928) 716-66-26</p>
             </div>
 
-            <div className={styles.info}>
+            <div className={styles.info_container}>
               <div className={styles.info_name}>
                 <img src="/mail-01.svg" alt="Иконка" />
                 <p>E-mail</p>
@@ -285,7 +285,7 @@ export const AboutUs = () => {
               <p>center.tkani@yandex.ru</p>
             </div>
 
-            <div className={styles.info}>
+            <div className={styles.info_container}>
               <div className={styles.info_name}>
                 <img src="/clock-01.svg" alt="Иконка" />
                 <p>Часы работы</p>
@@ -294,11 +294,55 @@ export const AboutUs = () => {
             </div>
           </div>
 
-          <div className={styles.contacts_form}></div>
+          <form className={styles.contacts_form}>
+            <h3>Напишите нам по любому вопросу</h3>
+            <div className={styles.form}>
+              <div className={styles.form_inputs}>
+                <div className={styles.input}>
+                  <p>Имя </p>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div className={styles.input}>
+                  <p>Телефон</p>
+                  <input type="tel" name="tel" id="tel" />
+                </div>
+              </div>
+              <div className={styles.input}>
+                <p>Сообщение</p>
+                <textarea name="area" id="area"></textarea>
+              </div>
+            </div>
+            <div className={styles.checkbox_text}>
+              <input
+                type="checkbox"
+                name="check"
+                id="check"
+                className={styles.checkbox}
+                required
+              />
+              <label for="check">
+                Я прочитал Privacy Policy и согласен с условиями безопасности и
+                обработки персональных данных
+              </label>
+            </div>
+            <button type="submit" className={styles.subm_btn}>
+              Отправить
+            </button>
+          </form>
         </div>
 
         <div className={styles.contacts_map}>
-          <img src="/map.jpg" alt="Карта" />
+          <a href="https://yandex.ru/maps/30/nalchik/?utm_medium=mapframe&utm_source=maps">
+            Нальчик
+          </a>
+          <a href="https://yandex.ru/maps/30/nalchik/?ll=43.629167%2C43.492385&utm_campaign=desktop&utm_medium=mapframe&utm_source=maps&z=18">
+            Нальчик — Яндекс Карты
+          </a>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=43.629167%2C43.492385&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=18"
+            frameborder="1"
+            allowfullscreen="true"
+          ></iframe>
         </div>
       </section>
     </div>
