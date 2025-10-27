@@ -28,25 +28,27 @@
 
 .bottom_section {
     display: flex;
+    flex-direction: column;
+}
+.footer_content {
+    display: flex;
     justify-content: space-between;
 }
-.bottom_section_clothes,.bottom_section_home,.bottom_section_сompany {
+.footer_section {
     display: flex;
     flex-direction: column;
     gap: 13px;
-    width: 300px;
 }
-.bottom_section_home {
-    margin-right: 316px;
-}
-ul {
-    list-style: none;
-}
-.title {
+.footer_section h3 {
     font-size: 17px;
-    font-weight: 500;
-    color: #101010;
 }
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
 .link {
     text-decoration: none;
     font-size: 14px;
@@ -59,11 +61,15 @@ ul {
 
 
 
-
-
-
-
-
+.footer_bottom {
+    padding: 64px 0 32px;
+}
+.logo_img {
+    width: 35px;
+}
+.logo_text {
+    width: 120px;
+}
 
 
 
