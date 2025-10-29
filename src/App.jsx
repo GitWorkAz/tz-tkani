@@ -5,6 +5,9 @@ import { SingUp } from "./pages/singUp/SingUp";
 import { LogIn } from "./pages/logIn/LogIn";
 import { Forgot } from "./pages/forgot/Forgot";
 import { AboutUs } from "./pages/aboutUs/AboutUs";
+import { NotFound } from "./pages/notFound/NotFound";
+import { CatalogHome } from "./pages/catalogHome/CatalogHome";
+import { Discounts } from "./pages/discounts/Discounts";
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
             <Route path="sing_up" element={<SingUp />} />
             <Route path="log_in" element={<LogIn />} />
             <Route path="forgot" element={<Forgot />} />
+            <Route path="not_found" element={<NotFound />} />
+            <Route path="catalog_home" element={<CatalogHome />} />
+            <Route path="discounts" element={<Discounts />} />
 
 
           </Route>

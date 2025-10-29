@@ -23,7 +23,7 @@ export const Header = () => {
           <Link to="about_us" className={styles.link}>
             О нас
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="catalog_home" className={styles.link}>
             Оплата и доставка
           </Link>
           <Link to="/" className={styles.link}>
@@ -59,7 +59,7 @@ export const Header = () => {
           <Link to="/" className={`${styles.our_work} ${styles.link}`}>
             Работы из наших тканей
           </Link>
-          <Link to="/" className={`${styles.sale} ${styles.link}`}>
+          <Link to="discounts" className={`${styles.sale} ${styles.link}`}>
             Скидки и акции
           </Link>
         </div>

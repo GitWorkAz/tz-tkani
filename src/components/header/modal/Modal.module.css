@@ -36,12 +36,12 @@
 .modal_title {
     color: #101010;
 }
+
 .modal_links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .modal_link_name {
     display: flex;
     flex-direction: column;
@@ -81,6 +81,7 @@
     font-weight: 500;
     padding-left: 18px;
 }
+
 .openedBackground {
   background-color: #e4e2df;
 }

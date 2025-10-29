@@ -1,3 +1,4 @@
+import { Appeal } from "../components/appeal/Appeal"
 import { Main } from "../components/main/Main"
 import { MySwiper } from "../components/swiper/MySwiper"
 
@@ -7,6 +8,7 @@ export const Home =()=> {
         <>
             <MySwiper />
             <Main /> 
+            <Appeal />
         </>
     )
 }
