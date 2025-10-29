@@ -16,7 +16,7 @@ export const Footer = () => {
 
       <section className={styles.bottom_section}>
         <div className={styles.footer_content}>
-          <div className={styles.footer_section}>
+          <div className={`${styles.footer_section}, ${styles.section_clothes}`}>
             <h3>Для одежды</h3>
             <nav className={styles.nav}>
               <Link href="/fabrics/shaim" className={styles.link}>
@@ -58,7 +58,7 @@ export const Footer = () => {
             </nav>
           </div>
 
-          <div className={styles.footer_section}>
+          <div className={`${styles.footer_section}, ${styles.section_home}`}>
             <h3>Для дома</h3>
             <nav className={styles.nav}>
               <Link href="/home/turkey-style" className={styles.link}>
@@ -94,7 +94,7 @@ export const Footer = () => {
             </nav>
           </div>
 
-          <div className={styles.footer_section}>
+          <div className={`${styles.footer_section}, ${styles.section_company}`}>
             <h3>Компания</h3>
             <nav className={styles.nav}>
               <Link href="/account" className={styles.link}>
@@ -138,9 +138,19 @@ export const Footer = () => {
             </div>
             <p>© 2025 Центр Ткани. Все права защищены.</p>
           </div>
-          <div className={styles.links_container}></div>
+          <div className={styles.links_container}>
+            <img src="/footer-img.jpg" alt="Оценка" />
+            <div className={styles.links}>
+              <p>Подпишитесь на нас в соцсетях</p>
+              <a href=""><img src="/insta.svg" alt="insta" /></a>
+              <a href=""><img src="/whatsapp.svg" alt="whatsapp" /></a>
+              <a href=""><img src="/telegram.svg" alt="telegram" /></a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   );
 };
+
+

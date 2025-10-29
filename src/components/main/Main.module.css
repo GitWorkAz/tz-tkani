@@ -1,0 +1,159 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.section_products {
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 0;
+}
+.products_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products_title h3 {
+    font-size: 38px;
+    font-weight: 600;
+}
+.title_link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9B1E1C;
+}
+
+.product_all {
+    display: flex;
+    gap: 16px;
+}
+.product_card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    background: #fff;
+    width: 323px;
+}
+.card_img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+.card_name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+
+}
+.card_name h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.card_name p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9B1E1C;
+}
+
+
+.product_card:hover .card_hidden {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    max-height: 300px;
+    gap: 12px;
+    padding: 0 10px;
+}
+.card_hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+}
+.card_hidden {
+    
+}
+.card_discount {
+    font-size: 14px;
+    color: #888;
+}
+.card_count_container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_count {
+    display: flex;
+    
+}
+.card_count button {
+    background: #fff;
+    border: 1px solid #10101010;
+    height: 46px;
+    width: 50px;
+}
+.btn_dec {
+    border-radius: 8px 0 0 8px;
+}
+.btn_inc {
+    border-radius: 0 8px 8px 0;
+}
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101010;
+    background: #E4E2DE;
+    height: 46px;
+    width: 64px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.card_price {
+    display: flex;
+    align-self: self-end;
+    color: #101010;
+    font-size: 18px;
+    font-weight: bold;
+}
+.buy_btn {
+    background: #9B1E1C;
+    color: #fff;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

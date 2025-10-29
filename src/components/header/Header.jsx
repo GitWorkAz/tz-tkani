@@ -63,14 +63,14 @@ export const Header = () => {
             Скидки и акции
           </Link>
         </div>
-        <div className={styles.logo}>
+        <Link to="/" className={styles.logo}>
           <img src="/Logo Icon.svg" alt="Логотип" className={styles.logo_img} />
           <img
             src="/CENTER TKANI.svg"
             alt="Название"
             className={styles.logo_text}
           />
-        </div>
+        </Link>
         <div className={styles.search}>
           <div className={styles.search_container}>
             <input
