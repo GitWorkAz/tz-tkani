@@ -30,8 +30,6 @@
 
 
 
-
-
 .modal_links {
     display: flex;
     flex-direction: column;
@@ -88,8 +86,45 @@
     border-radius: 20px;
     padding: 10px;
     background: #fff;
-    width: 323px;
+    width: 325px;
+    position: relative;
+    z-index: 1;
+    transition: z-index 0.3s ease, box-shadow 0.3s ease;
+    min-height: 457px;
 }
+.product_card:hover {
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card_hidden {
+    position: absolute;
+    bottom: -120px;
+    left: 0px;
+    right: 0px;
+
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 0 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card_visible {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
+    opacity: 1;
+    max-height: 150px;
+    transform: translateY(0);
+
+}
+
+
 .card_img {
     width: 100%;
     border-radius: 10px;
@@ -100,7 +135,7 @@
     flex-direction: column;
     gap: 5px;
     padding: 0 10px;
-
+    min-height: 40px;
 }
 .card_name h3 {
     font-size: 16px;
@@ -112,25 +147,10 @@
     color: #9B1E1C;
 }
 
-.product_card:hover .card_hidden {
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-    max-height: 300px;
-    gap: 12px;
-    padding: 0 10px;
-}
-.card_hidden {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    transform: translateY(20px);
-}
-
 .card_discount {
     font-size: 14px;
     color: #888;
+    margin-bottom: 12px;
 }
 .card_count_container {
     display: flex;
@@ -151,8 +171,15 @@
 .btn_dec {
     border-radius: 8px 0 0 8px;
 }
+.btn_dec:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
 .btn_inc {
     border-radius: 0 8px 8px 0;
+}
+.btn_inc:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .count {
     display: flex;
@@ -178,8 +205,13 @@
     border-radius: 8px;
     height: 40px;
     border: none;
+    margin-top: 10px;
+    /* width: 305px; */
 }
-
+.buy_btn:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
 
 
 

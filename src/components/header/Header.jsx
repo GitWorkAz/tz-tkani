@@ -59,7 +59,7 @@ export const Header = () => {
           <Link to="/" className={`${styles.our_work} ${styles.link}`}>
             Работы из наших тканей
           </Link>
-          <Link to="discounts" className={`${styles.sale} ${styles.link}`}>
+          <Link to="/discounts" className={`${styles.sale} ${styles.link}`}>
             Скидки и акции
           </Link>
         </div>
