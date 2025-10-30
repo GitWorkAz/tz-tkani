@@ -22,6 +22,7 @@ export const Main = () => {
   //   fetchData();
   // });
 
+  
   const renderCard = (product, n) =>
     Array(n)
       .fill(product)

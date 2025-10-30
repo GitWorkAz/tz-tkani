@@ -8,6 +8,8 @@ import { AboutUs } from "./pages/aboutUs/AboutUs";
 import { NotFound } from "./pages/notFound/NotFound";
 import { CatalogHome } from "./pages/catalogHome/CatalogHome";
 import { Discounts } from "./pages/discounts/Discounts";
+import { PersonalAccount } from "./pages/personalAccount/PersonalAccount";
+import { OurWorks } from "./pages/ourWorks/OurWorks";
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
             <Route path="not_found" element={<NotFound />} />
             <Route path="catalog_home" element={<CatalogHome />} />
             <Route path="discounts" element={<Discounts />} />
+            <Route path="personal_account" element={<PersonalAccount/>} />
+            <Route path="our_works" element={<OurWorks />} />
+
 
 
           </Route>

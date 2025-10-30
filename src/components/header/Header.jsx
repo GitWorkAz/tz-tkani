@@ -20,13 +20,13 @@ export const Header = () => {
           Мы на WB
         </a>
         <nav className={styles.navigation}>
-          <Link to="about_us" className={styles.link}>
+          <Link to="/about_us" className={styles.link}>
             О нас
           </Link>
-          <Link to="catalog_home" className={styles.link}>
+          <Link to="/catalog_home" className={styles.link}>
             Оплата и доставка
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="/personal_account" className={styles.link}>
             Часто задаваемые вопросы
           </Link>
           <Link to="/" className={styles.link}>
@@ -56,7 +56,7 @@ export const Header = () => {
             )}
           </div>
 
-          <Link to="/" className={`${styles.our_work} ${styles.link}`}>
+          <Link to="/our_works" className={`${styles.our_work} ${styles.link}`}>
             Работы из наших тканей
           </Link>
           <Link to="/discounts" className={`${styles.sale} ${styles.link}`}>
