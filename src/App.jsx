@@ -10,6 +10,7 @@ import { CatalogHome } from "./pages/catalogHome/CatalogHome";
 import { Discounts } from "./pages/discounts/Discounts";
 import { PersonalAccount } from "./pages/personalAccount/PersonalAccount";
 import { OurWorks } from "./pages/ourWorks/OurWorks";
+import { PrivacyPolicy } from "./pages/privacyPolicy/PrivacyPolicy";
 
 
 function App() {
@@ -23,12 +24,12 @@ function App() {
             <Route path="sing_up" element={<SingUp />} />
             <Route path="log_in" element={<LogIn />} />
             <Route path="forgot" element={<Forgot />} />
-            <Route path="not_found" element={<NotFound />} />
+            <Route path="404" element={<NotFound />} />
             <Route path="catalog_home" element={<CatalogHome />} />
             <Route path="discounts" element={<Discounts />} />
             <Route path="personal_account" element={<PersonalAccount/>} />
             <Route path="our_works" element={<OurWorks />} />
-
+            <Route path="privacy_policy" element={<PrivacyPolicy />} />
 
 
           </Route>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./AboutUs.module.css";
 
 export const AboutUs = () => {
@@ -9,9 +9,40 @@ export const AboutUs = () => {
     setOverlayOpen(overlayOpen === index ? null : index);
   };
 
+  useEffect(() => {
+    const handleHashScroll = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
+        setTimeout(() => {
+          scrollToHashElement(hash);
+        }, 100);
+      }
+    };
+    handleHashScroll();
+    window.addEventListener("hashchange", handleHashScroll);
+    return () => {
+      window.removeEventListener("hashchange", handleHashScroll);
+    };
+  }, []);
+
+  const scrollToHashElement = (hash) => {
+    const element = document.getElementById(hash);
+    if (element) {
+      const headerHeight = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+  
+
   return (
     <div className={styles.wrapper}>
-      <section className={styles.section_about}>
+      <section id="about" className={styles.section_about}>
         <div className={styles.title_text}>
           <p>Давайте знакомиться!</p>
           <h3>Мы — магазин натуральных тканей</h3>
@@ -63,7 +94,7 @@ export const AboutUs = () => {
         </div>
       </section>
 
-      <section className={styles.section_delivery}>
+      <section id="delivery" className={styles.section_delivery}>
         <div className={styles.section_delivery_text}>
           <h3>Доставка</h3>
           <p>
@@ -115,7 +146,7 @@ export const AboutUs = () => {
         </div>
       </section>
 
-      <section className={styles.section_pay}>
+      <section id="pay" className={styles.section_pay}>
         <div className={styles.section_pay_text}>
           <h3>Оплата</h3>
           <p>Вы можете оплатить заказ любым предложенным удобным способом.</p>
@@ -136,7 +167,7 @@ export const AboutUs = () => {
         </div>
       </section>
 
-      <section className={styles.section_questions}>
+      <section id="questions" className={styles.section_questions}>
         <h3 className={styles.section_questions_title}>
           Часто задаваемые вопросы
         </h3>
@@ -256,7 +287,7 @@ export const AboutUs = () => {
         </div>
       </section>
 
-      <section className={styles.section_contacts}>
+      <section id="contacts" className={styles.section_contacts}>
         <h3 className={styles.section_contacts_title}>Контакты</h3>
 
         <div className={styles.contacts_container}>

@@ -111,9 +111,9 @@ export const Modal = ({}) => {
         </section>
 
         <section className={styles.modal_right}>
-          <h3 className={styles.modal_title}>Для одежды</h3>
+          <h3 className={styles.modal_title}>Для дома</h3>
           <div className={styles.modal_links}>
-            <div
+            <div 
               name=""
               className={`${styles.modal_link_name} ${
                 overlayOpen === 5 ? styles.opened : ""
@@ -123,7 +123,7 @@ export const Modal = ({}) => {
               Сатин Турция
               {overlayOpen === 5 && (
                 <>
-                  <Link to="/" className={styles.link}>
+                  <Link to="/catalog_home" className={styles.link}>
                     Однотоп / Страйп
                   </Link>
                   <Link to="/" className={styles.link}>

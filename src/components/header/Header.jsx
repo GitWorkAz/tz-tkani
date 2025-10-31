@@ -13,6 +13,28 @@ export const Header = () => {
     setIsModalOpen(false);
   };
 
+  const scroll = (sectionId) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      const headerHeight = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+  const navClick = (e, sectionId) => {
+    e.preventDefault();
+    if (window.location.pathname === "/about_us") {
+      scroll(sectionId);
+    } else {
+      window.location.href = `/about_us#${sectionId}`;
+    }
+  };
+
   return (
     <div className={styles.wrapper}>
       <section className={styles.top_bar}>
@@ -20,19 +42,39 @@ export const Header = () => {
           Мы на WB
         </a>
         <nav className={styles.navigation}>
-          <Link to="/about_us" className={styles.link}>
+          <Link
+            to="/about_us#about"
+            className={styles.link}
+            onClick={(e) => handleNavClick(e, "about")}
+          >
             О нас
           </Link>
-          <Link to="/catalog_home" className={styles.link}>
+          <Link
+            to="/about_us#delivery"
+            className={styles.link}
+            onClick={(e) => handleNavClick(e, "delivery")}
+          >
             Оплата и доставка
           </Link>
-          <Link to="/personal_account" className={styles.link}>
+          <Link
+            to="/about_us#questions"
+            className={styles.link}
+            onClick={(e) => handleNavClick(e, "questions")}
+          >
             Часто задаваемые вопросы
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link
+            to="/about_us#pay"
+            className={styles.link}
+            onClick={(e) => handleNavClick(e, "pay")}
+          >
             Программа лояльности
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link
+            to="/about_us#contacts"
+            className={styles.link}
+            onClick={(e) => handleNavClick(e, "contacts")}
+          >
             Контакты
           </Link>
         </nav>
@@ -42,7 +84,6 @@ export const Header = () => {
       </section>
 
       <section className={styles.bottom_bar}>
-
         <div className={styles.transitions}>
           <div className={styles.position_btn}>
             <button className={styles.catalog} onClick={catalogClick}>
