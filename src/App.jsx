@@ -11,12 +11,14 @@ import { Discounts } from "./pages/discounts/Discounts";
 import { PersonalAccount } from "./pages/personalAccount/PersonalAccount";
 import { OurWorks } from "./pages/ourWorks/OurWorks";
 import { PrivacyPolicy } from "./pages/privacyPolicy/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

@@ -115,6 +115,73 @@
 
 
 
+@media (max-width: 768px) {
+    .top_bar {
+        position: relative;
+    }
+    .navigation {
+        margin-left: 83.5px;
+    }
+    .link {
+        font-size: 12px;
+    }
+    .link_a1 {
+        position: absolute;
+        top: 121px;
+        right: 111px;
+    }
+    .link_a2 {
+        position: absolute;
+        top: 121px;
+        right: 16px;
+    }
+
+    .bottom_bar {
+        position: relative;
+        margin-bottom: 64px;
+    }
+    .transitions {
+        position: absolute;
+        top: 80px;
+        left: 16px;
+        gap: 14px;
+    }
+    .catalog {
+        padding: 6px 12px;
+        border-radius: 8px;
+    }
+    .our_work, .sale{
+        font-size: 16px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

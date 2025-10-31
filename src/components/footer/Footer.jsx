@@ -16,8 +16,9 @@ export const Footer = () => {
 
       <section className={styles.bottom_section}>
         <div className={styles.footer_content}>
+
           <div className={`${styles.footer_section}, ${styles.section_clothes}`}>
-            <h3>Для одежды</h3>
+            <h3 className={styles.section_title}>Для одежды</h3>
             <nav className={styles.nav}>
               <Link to="/" className={styles.link}>
                 Шайм
@@ -59,7 +60,7 @@ export const Footer = () => {
           </div>
 
           <div className={`${styles.footer_section}, ${styles.section_home}`}>
-            <h3>Для дома</h3>
+            <h3 className={styles.section_title}>Для дома</h3>
             <nav className={styles.nav}>
               <Link to="/" className={styles.link}>
                 Стиль Турция
@@ -95,7 +96,7 @@ export const Footer = () => {
           </div>
 
           <div className={`${styles.footer_section}, ${styles.section_company}`}>
-            <h3>Компания</h3>
+            <h3 className={styles.section_title}>Компания</h3>
             <nav className={styles.nav}>
               <Link to="/personal_account" className={styles.link}>
                 Личный кабинет
@@ -120,6 +121,7 @@ export const Footer = () => {
               </Link>
             </nav>
           </div>
+
         </div>
 
         <div className={styles.footer_bottom}>

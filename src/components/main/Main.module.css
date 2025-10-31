@@ -165,7 +165,35 @@
 
 
 
-
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 15.5px;
+    }
+    .products_title h3 {
+        font-size: 32px;
+    }
+    .card_count button {
+        height: 36px;
+        width: 35px;
+    }
+    .count {
+        height: 36px;
+        width: 40px;
+        font-size: 14px;
+    }
+    .card_price{
+        font-size: 12px;
+    }
+    .card_name h3 {
+        font-size: 14px;
+    }
+    .card_name p {
+        font-size: 14px;
+    }
+    .card_discount {
+        font-size: 11px;
+    }
+}
 
 
 

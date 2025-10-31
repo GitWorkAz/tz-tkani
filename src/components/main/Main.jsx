@@ -12,6 +12,25 @@ export const Main = () => {
     setCount((prev) => +(prev - 0.1).toFixed(1));
   };
 
+
+  const [cardsToShow, setCardsToShow] = useState(4)
+  
+  useEffect (()=> {
+    const handleResize =()=> {
+      if (window.innerHeight < 400) {
+        setCardsToShow(2)
+      } else if(window.innerHeight < 768){
+        setCardsToShow(3)
+      } else {
+        setCardsToShow(4)
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return ()=> window.removeEventListener('resize', handleResize)
+  }, [])
+
+
   // const [products, setProducts] = useState();
   // const fetchData = async () => {
   //   const response = await fetch(" https://jsonplaceholder.typicode.com/users");
@@ -57,9 +76,10 @@ export const Main = () => {
           <Link className={styles.title_link}>Посмотреть все</Link>
         </div>
         <div className={styles.product_all}>
+          
           {renderCard(
             products.find((p) => p.id === 1),
-            4
+            cardsToShow
           )}
 
           {/* {products.length > 0 && (
@@ -98,7 +118,7 @@ export const Main = () => {
         <div className={styles.product_all}>
           {renderCard(
             products.find((p) => p.id === 2),
-            4
+            cardsToShow
           )}
         </div>
       </section>
@@ -111,7 +131,7 @@ export const Main = () => {
         <div className={styles.product_all}>
           {renderCard(
             products.find((p) => p.id === 3),
-            4
+            cardsToShow
           )}
         </div>
       </section>

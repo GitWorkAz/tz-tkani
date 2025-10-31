@@ -40,8 +40,9 @@
     flex-direction: column;
     width: 300px;
 }
-.footer_section h3 {
+.section_title {
     font-size: 17px;
+    font-weight: 500;
 }
 .nav {
     display: flex;
@@ -99,9 +100,6 @@
     color: #888;
 }
 
-.section_clothes {
-
-}
 .section_home {
     margin-right: 316px;
 }
@@ -111,7 +109,53 @@
 
 
 
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+    .top_section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .top_section_title {
+        font-size: 32px;
+    }
+    .top_section_btn {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8.5px 11.5px;
+        align-self: start;
+    }
+    .footer_content {
+        justify-content: space-between;
+    }
+    .footer_section {
+        width: 0;
+    }
+    .section_home {
+        margin: 0;
+    }
+    .section_company {
+        margin: 0;
+    }
+    .nav {
+        gap: 10px;
+    }
+    .link {
+        font-weight: 400;
+    }
 
+    .footer_bottom {
+        align-items: center;
+    }
+    .logo_container p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .links p {
+        font-size: 12px;
+    }
+}
 
 
 

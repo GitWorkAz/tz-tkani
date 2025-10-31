@@ -10,6 +10,7 @@ export const PrivacyPolicy = () => {
         <p className={styles.paragraph}>
           1.1. Обработка персональных данных осуществляется в соответствии с
           Федеральным законом "О персональных данных" № 152-ФЗ от 27.07.2006.
+          
         </p>
         <p className={styles.paragraph}>
           1.2. Пользователь, передавая свои персональные данные, даёт согласие на
@@ -82,7 +83,6 @@ export const PrivacyPolicy = () => {
           </li>
         </ul>
       </section>
-
       <section className={styles.section}>
         <h2>7. Заключительные положения</h2>
         <p className={styles.paragraph}>

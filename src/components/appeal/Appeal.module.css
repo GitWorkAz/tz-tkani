@@ -38,9 +38,39 @@
     font-weight: 500;
     letter-spacing: -0.48px;
 }
-.wrapper p {
+.bottom_p {
     text-align: center;
 }
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 40px;
+        margin: 32px 25px;
+    }
+    .appeal_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .appeal_title {
+        margin-bottom: 12px;
+    }
+    .appeal_card {
+        margin: 0;
+    }
+    .appeal_card p {
+        line-height: 24px;
+    }
+    .bottom_p {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 10px;
+    }
+}
+
+
 
 
 

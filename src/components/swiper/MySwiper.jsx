@@ -14,6 +14,7 @@ export const MySwiper = () => {
         loop
       >
         <SwiperSlide>
+          <h2 className={styles.slide_title_left}>ТКАНЬ ДЛЯ<br /> ОДЕЖДЫ</h2>
           <img
             src="/Hero Image Left.jpg"
             alt="Ткань для одежды"
@@ -21,6 +22,8 @@ export const MySwiper = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
+          <h2 className={styles.slide_title_left}>ТКАНЬ ДЛЯ<br /> ОДЕЖДЫ</h2>
+
           <img
             src="/Hero Image Left.jpg"
             alt="Ткань для одежды"
@@ -37,15 +40,17 @@ export const MySwiper = () => {
         loop
       >
         <SwiperSlide>
+          <h2 className={styles.slide_title_right}>ТКАНЬ ДЛЯ<br /> ДОМА</h2>
           <img
-            src="/Hero Image Left.jpg"
+            src="/Hero Image Right.jpg"
             alt="Ткань для одежды"
             className={styles.swiper_img}
           />
         </SwiperSlide>
         <SwiperSlide>
+          <h2 className={styles.slide_title_right}>ТКАНЬ ДЛЯ<br /> ДОМА</h2>
           <img
-            src="/Hero Image Left.jpg"
+            src="/Hero Image Right.jpg"
             alt="Ткань для одежды"
             className={styles.swiper_img}
           />
@@ -54,3 +59,4 @@ export const MySwiper = () => {
     </div>
   );
 };
+

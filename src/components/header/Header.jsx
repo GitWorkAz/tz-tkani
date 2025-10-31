@@ -38,47 +38,47 @@ export const Header = () => {
   return (
     <div className={styles.wrapper}>
       <section className={styles.top_bar}>
-        <a href="" className={styles.link}>
+        <a href="" className={`${styles.link} ${styles.link_a1}`}>
           Мы на WB
         </a>
         <nav className={styles.navigation}>
           <Link
             to="/about_us#about"
             className={styles.link}
-            onClick={(e) => handleNavClick(e, "about")}
+            onClick={(e) => navClick(e, "about")}
           >
             О нас
           </Link>
           <Link
             to="/about_us#delivery"
             className={styles.link}
-            onClick={(e) => handleNavClick(e, "delivery")}
+            onClick={(e) => navClick(e, "delivery")}
           >
             Оплата и доставка
           </Link>
           <Link
             to="/about_us#questions"
             className={styles.link}
-            onClick={(e) => handleNavClick(e, "questions")}
+            onClick={(e) => navClick(e, "questions")}
           >
             Часто задаваемые вопросы
           </Link>
           <Link
             to="/about_us#pay"
             className={styles.link}
-            onClick={(e) => handleNavClick(e, "pay")}
+            onClick={(e) => navClick(e, "pay")}
           >
             Программа лояльности
           </Link>
           <Link
             to="/about_us#contacts"
             className={styles.link}
-            onClick={(e) => handleNavClick(e, "contacts")}
+            onClick={(e) => navClick(e, "contacts")}
           >
             Контакты
           </Link>
         </nav>
-        <a href="/" className={styles.link}>
+        <a href="/" className={`${styles.link} ${styles.link_a2}`}>
           Мы на OZON
         </a>
       </section>
@@ -137,3 +137,5 @@ export const Header = () => {
     </div>
   );
 };
+
+
